@@ -18,9 +18,9 @@ import "./CSS/index.css";
 //BR can only have a single component inside it
 //Make sure NavLinks/Links are inside BR/HR, or else it will throw error
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Main />
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 //ReactDOM.render(<App />, document.getElementById('root'));
