@@ -1,0 +1,207 @@
+body {
+    margin: 70px auto;
+    width: 70%;
+    background-color: white;
+}
+
+code {
+ background: rgba(211,211,211,0.5);
+ border-radius: 4px;
+}
+nav ul, footer ul {
+    overflow: hidden;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 0px;
+    color: black;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: orange;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: bold;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: black;
+}
+
+p a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: orange;
+}
+
+/* Visuals for weather widget=================================================================================== */
+#weatherData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: orange;
+    width: 155px;
+    height: 200px;
+    border: 8px solid black;
+    border-radius: 4px;
+    position: fixed;
+    left: 2%;
+    top: 40%;
+}
+
+#weatherData>p, a, img {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 3px;
+    margin: -5px;
+}
+
+#cityName {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#weatherInfo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#dateDisplay {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#weatherData>img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    border-top: 2px solid black;
+    font-size: .9em;
+    position: static;
+    /* Updated Property */
+    bottom: 0;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+#githubIcon, #emailIcon, #linkedInIcon, a {
+    padding: 1px;
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+#githubIcon:hover, #emailIcon:hover, #linkedInIcon:hover, a:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#weatherData, #faviconImage {
+    padding: 1px;
+    transition: transform .3;
+    /* Animation */
+    margin: 0 auto;
+}
+
+#weatherData:hover, #faviconImage:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#weatherIcon {
+    -webkit-filter: drop-shadow(1px 5px 1px rgba(255,165,0,0.2));
+    filter: drop-shadow(1px 5px 1px rgba(255,165,0,0.2));
+}
+#faviconImage {
+    margin-right: 30px;
+}
+
+#frontPageText{
+    background: #ffbf40;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+hr {
+    height: 3px;
+    border: none;
+    color: #000;
+    background-color: #000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bioPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.bioPage_image {
+    object-fit: scale-down;
+    min-width: 20%;
+    min-height: 20%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    background: #ffbf40;
+}
+
+.bioPage_image:hover, .bioPage_text:hover, #frontPageText {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.bioPage_text {
+    background: #ffbf40;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*Blog Post specific CSS customizations ==================================================================================*/
+
+.blogImageDiv{
+    display:inline-block;
+    text-align:center;
+}
+.blogImage{
+  -webkit-box-shadow: 0 8px 6px -6px black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 8px 6px -6px black;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 8px 6px -6px black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
