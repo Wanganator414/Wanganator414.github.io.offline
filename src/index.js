@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //Routing
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,HashRouter } from "react-router-dom";
 
 //React-bootstrap
 import Container from "react-bootstrap/Container";
@@ -18,9 +18,9 @@ import "./CSS/index.css";
 //BR can only have a single component inside it
 //Make sure NavLinks/Links are inside BR/HR, or else it will throw error
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Main />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
 //ReactDOM.render(<App />, document.getElementById('root'));
