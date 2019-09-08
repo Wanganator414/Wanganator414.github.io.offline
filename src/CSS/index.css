@@ -26,7 +26,7 @@ body {
 
 .area {
   background: #ffc107;
-  background: -webkit-linear-gradient(to left, #faedc6, #eccb0b);
+  background: -webkit-linear-gradient(to left, #ffc107, #ffc107);
   width: 100%;
   height: 100vh;
   z-index: -1;
