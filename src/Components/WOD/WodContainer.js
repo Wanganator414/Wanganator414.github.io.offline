@@ -13,7 +13,7 @@ import "../../CSS/WodContainer.css";
 function WodContainer() {
   //Hooks start here
   const wordDataWrapper = useRef(null);
-  const { tabState, setTabState } = useState("show");
+  const [tabState, setTabState] = useState("show");
   //Button click handler
   function handleTabChange(e) {
     e.stopPropagation();
