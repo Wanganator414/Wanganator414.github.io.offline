@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import "../../CSS/WodContainer.css";
 
 //Get current day formatted
 let curday = function(sp) {

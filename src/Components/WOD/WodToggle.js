@@ -1,4 +1,5 @@
 import React from "react";
+import "../../CSS/WodContainer.css";
 
 function WodToggle({ buttonClick }) {
   return (
@@ -6,7 +7,8 @@ function WodToggle({ buttonClick }) {
       id="toggle"
       margin="10px"
       title="Toggle Word"
-      src="https://darksky.net/images/weather-icons/partly-cloudy-day.png"
+      width="40px"
+      src="http://www.icons101.com/icon_ico/id_78757/Dictionary.ico"
       alt="toggleWord"
       //Using native event listener for passed down event handler
       onClick={buttonClick}
