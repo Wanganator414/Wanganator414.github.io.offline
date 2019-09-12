@@ -9,9 +9,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, React">
-    <meta name="description" content="Personal blog/site">
-    <meta name="author" content="Eric Wang">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, React" />
+    <meta name="description" content="Personal blog/site" />
+    <meta name="author" content="Eric Wang" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -33,26 +33,42 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143779624-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-143779624-1");
+    </script>
+    <title>Eric W.</title>
     <style>
-    .svgLoader {
-      animation: spin 0.5s linear infinite;
-      margin: auto;
-    }
-    .divLoader {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+      .svgLoader {
+        animation: spin 0.5s linear infinite;
+        margin: auto;
+      }
+      .divLoader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
-  <br/><br/>
+  <br /><br />
   <body class="area">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <ul class="circles">
@@ -70,7 +86,7 @@
       <li></li>
     </ul>
     <div id="root"></div>
-            <!-- Testbackground above -->
+    <!-- Testbackground above -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -81,7 +97,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    
+
     <!-- <p>Awsome background based on Mohammad Abdul Mohaiman's pen on codepen.io</p> -->
   </body>
 </html>
