@@ -26,7 +26,7 @@ function Google_Analytics() {
   let params = {
     method: "GET"
   };
-  let url = "extreme-ip-lookup.com/json/";
+  let url = "https://extreme-ip-lookup.com/json/";
 
   function checkGeo(url,params) {
     fetch(url,params)
