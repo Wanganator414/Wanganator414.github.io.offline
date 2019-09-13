@@ -48,8 +48,8 @@ export default function Main() {
   return (
     <Container>
       <Google_Analytics />
-      {/* <WeatherContainer /> */}
-      {/* <WodContainer /> */}
+      <WeatherContainer />
+      <WodContainer />
 
       {/* Routing area starts here */}
       {/* <BrowserRouter> */}
