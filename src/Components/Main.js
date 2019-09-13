@@ -33,6 +33,9 @@ import Row from "react-bootstrap/Row";
 import WeatherContainer from "./Weather/WeatherContainer";
 import WodContainer from "./WOD/WodContainer";
 
+//AddOns
+import Google_Analytics from "./AddOns/Google_Analytics";
+
 //Global path for an image used only here
 const iconPath =
   process.env.PUBLIC_URL + "/Assets/Images/android-chrome-512x512.png";
@@ -44,8 +47,9 @@ const kagglePath = process.env.PUBLIC_URL + "/Assets/Images/Kaggle-512.png";
 export default function Main() {
   return (
     <Container>
-      <WeatherContainer />
-      <WodContainer/>
+      <Google_Analytics />
+      {/* <WeatherContainer /> */}
+      {/* <WodContainer /> */}
 
       {/* Routing area starts here */}
       {/* <BrowserRouter> */}

@@ -11,14 +11,14 @@ import "../../CSS/WodContainer.css";
 
 // Functional component starts here
 function WodContainer() {
-  //Hooks start here
+  //Hooks start here  
   const wordDataWrapper = useRef(null);
   const [tabState, setTabState] = useState("show");
   //Button click handler
   function handleTabChange(e) {
     e.stopPropagation();
     //Use ref on wrapper div to change its className animation
-    setTabState(wordDataWrapper.current.className == "show" ? "hide" : "show");
+    setTabState(wordDataWrapper.current.className === "show" ? "hide" : "show");
     console.log("WOD Button Clicked");
   }
 
