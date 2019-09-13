@@ -37,7 +37,7 @@ const WeatherData = () => {
 
   function apiCall(url, params) {
     //Only run when website runs for first time, avoid redundant API calls
-    if (imgUrl == false) {
+    if (imgUrl == "") {
       fetch(url, params)
         .then(response => {
           //return readable stream here
@@ -45,7 +45,7 @@ const WeatherData = () => {
         })
         .then(data => {
           //work with JSON data here
-          console.log("Data arrived");
+          console.log("Weather Data arrived.");
           imgTitle = data.weather[0].main;
           setWeatherInfo(
             `${data.weather[0].main} and ${(data.main.temp - 273.15).toFixed(

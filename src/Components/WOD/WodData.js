@@ -27,14 +27,15 @@ function WodData() {
     curday("-") +
     "&api_key=c23b746d074135dc9500c0a61300a3cb7647e53ec2b9b658e";
   function wordScrape() {
-    if (wordInfo == false) {
+    if (wordInfo == "") {
       fetch(url, params)
         .then(response => {
           return response.json();
         })
         .then(data => {
           //work with JSON data here
-          console.log(data);
+          // console.log(data);
+          console.log("Word data arrived.");
           setWordName(data.word);
           setWordInfo(data.definitions[0].text);
           setPartsSpeech(data.definitions[0].partOfSpeech);
