@@ -10,7 +10,7 @@ let curday = function(sp) {
   let dd = today.getDate();
   let mm = today.getMonth() + 1; //As January is 0.
   let yyyy = today.getFullYear();
-  if (dd < 10) dd = "0" + dd;
+  if (dd < 10) dd = "0" + dd-1;
   if (mm < 10) mm = "0" + mm;
   dateDisplay = yyyy + sp + mm + sp + dd;
   return dateDisplay;
@@ -36,8 +36,8 @@ function WodData() {
           //work with JSON data here
           // console.log(data);
           console.log("Word data arrived.");
-          setWordName(data.word);
-          setWordInfo(data.definitions[0].text);
+          setWordName(data.word[0].toUpperCase()+data.word.slice(1));
+          setWordInfo(data.definitions[0].text[0] + data.definitions[0].text.slice(1));
           setPartsSpeech(data.definitions[0].partOfSpeech);
         })
         .catch(error => {
