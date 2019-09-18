@@ -16,7 +16,6 @@
   /* border: 3px solid green; */
 }
 
-
 /* Inner wrapper div*/
 #weatherData {
   /* transition: transform 0.1s; */
@@ -64,8 +63,13 @@
   transition: transform 0.05s;
 }
 
+
+#weatherData h5{
+  font-weight: 700;
+}
 #weatherData p:hover,
-#weatherData img:hover {
+#weatherData img:hover,
+#weatherData h5:hover {
   transform: scale(1.07);
 }
 #weatherData img {

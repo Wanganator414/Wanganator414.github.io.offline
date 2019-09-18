@@ -5,9 +5,9 @@
   /* Text align works on any element type */
   text-align: center;
   width: 15.5vw;
-  height: 32vh;
+  height: 40vh;
   position: fixed;
-  top: 18vh;
+  top: 11vh;
   left: -5vw;
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   overflow: hidden;
@@ -26,6 +26,7 @@
   transition: transform 1s cubic-bezier(0, 0.52, 0, 1);
   z-index: 5;
   width: 9vw;
+  /* height: 29vh; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,6 +53,7 @@
   font-family: "Exo", "Ubuntu", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
+  font-size: 12px;
   transition: transform 0.05s;
 }
 
