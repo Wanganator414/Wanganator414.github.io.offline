@@ -74,7 +74,7 @@ const WeatherData = () => {
   });
   return (
     <div>
-      <p>Davis,CA</p>
+      <h5>Davis,CA</h5>
       <p>{curday("-")}</p>
       <img id="weatherIcon" src={imgUrl} title={imgTitle}></img>
       {/* <br /> */}
