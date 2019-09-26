@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../../CSS/WodContainer.css";
 
-const rp = require("request-promise");
-const cheerio = require("cheerio");
+// Not used atm
+// const rp = require("request-promise");
+// const cheerio = require("cheerio");
 
 let curday = function(sp) {
   let dateDisplay = "Loading...";
@@ -15,6 +16,7 @@ let curday = function(sp) {
   dateDisplay = yyyy + sp + mm + sp + dd;
   return dateDisplay;
 };
+
 function WodData() {
   const [wordName, setWordName] = useState("");
   const [wordInfo, setWordInfo] = useState("");
@@ -26,7 +28,7 @@ function WodData() {
     "https://api.wordnik.com/v4/words.json/wordOfTheDay?date=" +
     curday("-") +
     "&api_key=c23b746d074135dc9500c0a61300a3cb7647e53ec2b9b658e";
-  function wordScrape() {
+  function wordOfDay() {
     if (wordInfo == "") {
       fetch(url, params)
         .then(response => {
@@ -48,7 +50,7 @@ function WodData() {
   }
 
   useEffect(() => {
-    wordScrape(url, params);
+    wordOfDay(url, params);
   });
 
   return (
